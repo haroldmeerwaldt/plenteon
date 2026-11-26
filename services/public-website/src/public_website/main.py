@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 
-app = FastAPI(title="Public Website")
+app = FastAPI(title="Plenteon")
 
 
 @app.get("/")

@@ -1,7 +1,7 @@
 [project]
 name = "public-website"
 version = "0.0.1"
-description = "Add your description here"
+description = "Public-facing website for Plenteon"
 readme = "README.md"
 authors = [
     { name = "Harold Meerwaldt"}
@@ -12,8 +12,9 @@ dependencies = [
     "uvicorn[standard]>=0.54.0",
 ]
 
+# services/public-website/pyproject.toml
 [project.scripts]
-public-website = "public_website:main"
+plenteon-dev = "public_website:serve_dev"
 
 [build-system]
 requires = ["uv_build>=0.13.10,<0.14.0"]
