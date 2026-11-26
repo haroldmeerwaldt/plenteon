@@ -1,0 +1,15 @@
+[project]
+name = "plenteon"
+version = "0.0.1"
+requires-python = ">=3.15"
+dependencies = [
+    "public-website",
+]
+
+[tool.uv.sources]
+public-website = { workspace = true }
+
+[tool.uv.workspace]
+members = [
+    "services/public-website",
+]
